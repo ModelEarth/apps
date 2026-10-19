@@ -6,6 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 
+<script>
+// Location Modeling now resides at localsite/info. The query string and hash carry forward,
+// and without either the info page opens on the Energy impact set.
+location.replace("../localsite/info/" + location.search + (location.hash || (location.search ? "" : "#set=energy")));
+</script>
+
 <script type="text/javascript" src="../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
 <script type="text/javascript" src="../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
